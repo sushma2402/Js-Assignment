@@ -1,0 +1,173 @@
+<h1> EXPLAIN WITH EXAMPLES THE REMAING METHOD OF STRINGS AND ARRAY?</H1>
+Strings are useful for holding data that can be represented in text form. Some of the most-used operations on strings are to check their length, to build and concatenate them using the + and += string operators, checking for the existence or location of substrings with the indexOf() method, or extracting substrings with the substring() method.
+Types of string
+
+Method	Description
+charAt()	Returns the character at the specified index (position)
+charCodeAt()	Returns the Unicode of the character at the specified index
+concat()	Joins two or more strings, and returns a new joined strings
+
+<h2>#charAt()</h2>
+<html>
+<body>
+
+<p>Click the button to display the last character of the string "HELLO WORLD".</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "HELLO WORLD";
+  var res = str.charAt(str.length-1);
+  document.getElementById("demo").innerHTML = res;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+<h2>charCodeAt()</h2>
+<html>
+<body>
+
+<p>Click the button to display the unicode of the first character in the string "HELLO WORLD".</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "HELLO WORLD";
+  var n = str.charCodeAt(0);
+  document.getElementById("demo").innerHTML = n;
+}
+</script>
+
+</body>
+</html>
+
+
+<h2>concat()</h2>
+<html>
+<body>
+
+<p>Click the button to display the unicode of the first character in the string "HELLO WORLD".</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "HELLO WORLD";
+  var n = str.charCodeAt(0);
+  document.getElementById("demo").innerHTML = n;
+}
+</script>
+
+</body>
+</html>
+
+
+<h2>Array</h2>
+Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations.
+Popping 
+pushing
+Shifting Elements
+Changing Elements
+
+<h2>Popping</h2>
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2>
+
+<h2>pop()</h2>
+
+<p>The pop() method removes the last element from an array.</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits.pop();
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+</body>
+</html>
+
+
+
+<h2>pushing</h2>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p id="demo"></p>
+
+<script>
+var cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+</script>
+
+</body>
+</html>
+
+
+<h2>Shifting </h2>
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2> 
+
+<h2>shift()</h2>
+
+<p>The shift() method removes the first element of an array (and "shifts" all other elements to the left):</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits.shift();
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+</body>
+</html>
+
+<h2>Changing</h2>
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2>
+
+<p>Array elements are accessed using their index number:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits[0] = "Kiwi";
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+</body>
+</html>
+
+
+
+
