@@ -1,0 +1,86 @@
+1>	 Expore and explain the various console functions?
+Ans: 	A Web console is a tool which is mainly used to log information associated with a web page like: network requests, javascript, security errors, warnings, CSS etc. It enables us to interact with a web page by executing javascript expression in the contents of the page.
+The Console can be used to log information as part of the JavaScript development process, as well as allow you to interact with a web page by carrying out JavaScript expressions within the page's context. Essentially, the Console provides you with the ability to write, manage, and monitor JavaScript on demand.
+  Types of console:
+1. assert()	
+2. clear()
+3. count()
+assert-     Writes an error message to the console if the assertion is false
+clear()-	Clears the console
+count()-	Logs the number of times that this particular call to count() has been called
+
+<H2> ASSERT </H2>
+
+<html>
+<body>
+
+<h1>JavaScript console.assert() Method</h1>
+
+<p>Press F12 on your keyboard to see the message in the console view.</p>
+
+<p>This example demonstrates how an object is displayed when using the console.assert method.</p>
+
+<script>
+var myObj = { firsname : "John", lastname : "Doe" };
+
+console.assert(document.getElementById("demo"), myObj);
+</script>
+
+</body>
+</html>
+
+
+<H2> CLEAR</H2>
+
+
+<html>
+<body>
+
+<h1>JavaScript console.clear() Method</h1>
+
+<p>Press F12 on your keyboard to view the message in the console view.</p>
+
+<p>Click the button to clear the console:</p>
+
+<button onclick="myFunction()">Clear Console</button>
+
+<script>
+
+console.log("Hello! Press the button to clear the console!");
+
+function myFunction() {
+  console.clear();
+}
+
+</script>
+
+</body>
+</html>
+
+
+<H2> COUNT </H2>
+
+
+<html>
+<body>
+
+<h1>JavaScript console.count() Method</h1>
+
+<p>Press F12 on your keyboard to view the message in the console view.</p>
+
+<script>
+
+for (i = 0; i < 10; i++) {
+  console.count();
+}
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+#
