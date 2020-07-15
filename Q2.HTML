@@ -1,0 +1,35 @@
+<H1>WRITE THE DIFFERENCE BETWEEN VAR, LET AND CONST WITH CODE EXAMPLES</H1>
+The JavaScript variables statement is used to declare a variable and, optionally, we can initialize the value of that variable.
+<H2>Variable</H2>
+Variable declarations are processed before the execution of the code.
+The scope of a JavaScript variable declared with var is its current execution context.
+The scope of a JavaScript variable declared outside the function is global.
+
+
+<H2> LET</H2>
+The let statement declares a local variable in a block scope. It is similar to var, in that we can optionally initialize the variable.
+The let statement allows you to create a variable with the scope limited to the block on which it is used.
+It is similar to the variable we declare in other languages like Java, .NET, etc.
+
+<H2>CONST</H2>
+
+const statement values can be assigned once and they cannot be reassigned. The scope of const statement works similar to let statements.
+
+
+
+
+
+var a = 10;
+a = 20;
+//output: 20
+console.log(a);
+
+let b = 'hello';
+b = 'world';
+//output: 'world'
+console.log(b);
+
+const c = 'hello'
+//Error: Uncaught TypeError: Assignment to constant variable.
+c = 'world'
+
