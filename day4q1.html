@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The FizzBuzz Game</h2>
+
+
+
+<form id="frm0" >
+  Number: <input type="text" name="number" value="1"><br>
+  Answer: <input type="text" name="answer" value="1"><br><br>
+
+<button type="button" onclick="countUp()">Count up</button>
+
+<button type="button" onclick="reset()">Reset</button>
+
+<button type="button" onclick="check()">Check</button>
+
+</form>
+
+</body>
+<script>
+
+function fizzBuzz(num) {
+  
+  // fizzBuzzState = 0 = neither fizz nor buzz
+  // fizzBuzzState = 1 = fizz only
+  // fizzBuzzState = 2 = buzz only
+  // fizzBuzzState = 3 = fizzbuzz 
+  
+  let fizzBuzzState = 0;
+  
+  if ( (  num % 3  == 0 ) && ( num != 0 ) ) 
+    fizzBuzzState = 1;
+  
+  if ( ( num % 5  == 0 ) && ( num != 0 ) ) 
+    fizzBuzzState = 2;
+  
+  if ( ( num % 3 == 0 ) && ( num % 5 == 0 ) )
+    fizzBuzzState = 3;
+  
+  if ( fizzBuzzState == 0 )
+    return num;
+
+  if ( fizzBuzzState == 1 )
+    return "[ " + num + " ]" + " Fizz";
+  
+  if ( fizzBuzzState == 2 )
+    return "[ " + num + " ]" + " Buzz";
+    
+  if ( fizzBuzzState == 3 )
+    return "[ " + num + " ]" + " FizzBuzz"; 
+
+}
+
+
+function countUp() {
+
+document.forms["frm0"].elements[0].value++;
+
+var number = document.forms["frm0"].elements[0].value;
+
+document.forms["frm0"].elements[1].value = fizzBuzz(number);
+
+}
+
+
+function reset() {
+
+document.forms["frm0"].elements[0].value = 1;
+document.forms["frm0"].elements[1].value = 1;
+
+
+}
+
+
+function check() {
+
+var number = document.forms["frm0"].elements[0].value;
+// alert(number);
+// alert( fizzBuzz(number) );
+document.forms["frm0"].elements[1].value = fizzBuzz( number );
+
+}
+
+
+
+
+</script>
+</html> 
